@@ -1,0 +1,16 @@
+<h1>List of women</h1>
+<mat-divider></mat-divider>
+<br />
+
+<div fxLayout="row wrap"
+fxLayout.sm="column"
+fxLayoutAlign="center"
+fxLayoutGap="10px"
+>
+  <div fxFlex="30"
+  fxFlex.lg="15"
+  fxFlex.sm="40"
+  *ngFor="let woman of women">
+    <app-ficha [woman]="woman"></app-ficha>
+  </div>
+</div>
